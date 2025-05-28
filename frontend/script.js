@@ -50,7 +50,10 @@
         });
 
         if (selectedItems.length === 0) {
-          alert("Please select at least one item to place an order.");
+          document.getElementById('isSelected').style.display='flex';
+          setTimeout(()=>{
+            document.getElementById('isSelected').style.display='none';
+          },2000)
           return;
         }
 
