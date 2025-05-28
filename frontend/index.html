@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBite TCET - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu Page -->
+  <header>
+    <h1>QuickBite TCET</h1>
+  </header>
+
+  <main id="menu-page">
+    <div class="menu-container">
+      <!-- Breakfast Section -->
+      <section class="menu-section">
+        <h2>Breakfast</h2>
+        <div class="item-row" data-item="Samosa" data-price="15">
+          <div class="item-name">Samosa</div>
+          <div class="item-price">₹15</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item-row" data-item="Vada Pav" data-price="20">
+          <div class="item-name">Vada Pav</div>
+          <div class="item-price">₹20</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item-row" data-item="Noodles" data-price="30">
+          <div class="item-name">Noodles</div>
+          <div class="item-price">₹30</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lunch Section -->
+      <section class="menu-section">
+        <h2>Lunch</h2>
+        <div class="item-row" data-item="Dal Chawal" data-price="50">
+          <div class="item-name">Dal Chawal</div>
+          <div class="item-price">₹50</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item-row" data-item="Chapati" data-price="10">
+          <div class="item-name">Chapati</div>
+          <div class="item-price">₹10</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item-row" data-item="Dosa" data-price="40">
+          <div class="item-name">Dosa</div>
+          <div class="item-price">₹40</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Drinks Section -->
+      <section class="menu-section">
+        <h2>Drinks</h2>
+        <div class="item-row" data-item="Coca Cola" data-price="25">
+          <div class="item-name">Coca Cola</div>
+          <div class="item-price">₹25</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item-row" data-item="Pepsi" data-price="25">
+          <div class="item-name">Pepsi</div>
+          <div class="item-price">₹25</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item-row" data-item="Lassi" data-price="35">
+          <div class="item-name">Lassi</div>
+          <div class="item-price">₹35</div>
+          <div class="item-controls">
+            <button class="btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Order Button -->
+    <div class="order-button-container">
+      <button id="order-btn">Place Order</button>
+    </div>
+  </main>
+
+  <!-- Order Summary Page -->
+  <div id="summary-page" style="display: none;">
+    <div class="summary-container">
+      <h2>Order Summary</h2>
+      <div id="summary-items"></div>
+      <div class="total-amount" id="total-amount"></div>
+      <button id="pay-btn">Pay</button>
+    </div>
+  </div>
+
+  <!-- Payment Gateway Page -->
+  <div id="payment-page" style="display: none;">
+    <div class="payment-gateway">
+      <h2>Select Payment Method</h2>
+      <div class="payment-options">
+        <div class="payment-option" data-method="upi">UPI</div>
+        <div class="payment-option" data-method="gpay">Google Pay</div>
+        <div class="payment-option" data-method="card">Credit/Debit Card</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Preparation Page -->
+  <div id="preparation-page" style="display: none;" class="preparation-page">
+    <h2>Your Order is Being Prepared</h2>
+    <p>Please wait while we prepare your order...</p>
+  </div>
+
+  <!-- QR Code Page -->
+  <div id="qr-page" style="display: none;" class="preparation-page">
+    <h2>Your Order is Ready!</h2>
+    <p>Scan the QR code below to collect your order:</p>
+    <div class="qr-code"></div>
+  </div>
+
+  <!-- Order Delivered Page -->
+  <div id="delivered-page" style="display: none;" class="delivered-page">
+    <h2>Order Delivered!</h2>
+    <p>Thank you for choosing QuickBite TCET. Enjoy your meal!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
