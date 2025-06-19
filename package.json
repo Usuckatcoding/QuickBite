@@ -1,6 +1,6 @@
 {
   "homepage": "https://programming-base.github.io/QuickBite",
-  "name": "quickbite-college-project",
+  "name": "quickbite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
